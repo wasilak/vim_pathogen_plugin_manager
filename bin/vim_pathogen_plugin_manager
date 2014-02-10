@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+# require 'colorize'
+# require 'optparse'
+# require 'uri'
+# require 'fileutils'
+require 'vim_pathogen_plugin_manager'
+
+# initnial check if Git version is sane enough
+VimPathogenPluginManager::check_git_version
+
+manager = VimPathogenPluginManager::Manager.new
+
+if manager.parse_options
+  manager.run
+end
