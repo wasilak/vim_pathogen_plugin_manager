@@ -1,5 +1,6 @@
 require "vim_pathogen_plugin_manager/version"
 require 'optparse'
+require 'uri'
 require 'colorize'
 
 module VimPathogenPluginManager
